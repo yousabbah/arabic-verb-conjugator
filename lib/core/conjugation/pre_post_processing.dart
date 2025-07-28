@@ -46,7 +46,7 @@ class PrePostProcessing {
         }
       } else if (verb[1] == 'و' || verb[1] == 'ي') {
         // قوَل أو قيَد:قال،قوَل،قاد،قيَد
-        verb = verb.substring(0, 1) + "a" + verb.substring(2) + "/ " + verb;
+        verb = verb.substring(0, 1) + "ا" + verb.substring(2) + "/ " + verb;
       }
       if (verb.startsWith("ت")) {
         // تصل:وصل،تبع:تبع،تخذ:أخذ

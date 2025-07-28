@@ -12,6 +12,7 @@ dependencies:
     sdk: flutter
   intl: ^0.20.2
   provider: ^6.0.5
+  cupertino_icons: ^1.0.6  # ← Add this just in case
 
 flutter:
-  uses-material-design: true
+  uses-material-design: true  # ← Only this line under `flutter:`
