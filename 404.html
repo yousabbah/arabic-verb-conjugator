@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Arabic Verb Conjugator</title>
+  <!-- Dynamic Base HREF -->
+  <script>
+    const isGitHub = window.location.host.includes('github.io');
+    document.write(`<base href="${isGitHub ? '/arabic-verb-conjugator/' : '/'}">`);
+  </script>
+  <style>
+    html, body, #flutter-view {
+      width: 100%;
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+    }
+  </style>
+</head>
+<body>
+  <div id="flutter-view"></div>
+  <script src="flutter.js" defer></script>
+  <script>
+    // Default Flutter web loader (no need to customize unless you have special needs)
+    window.addEventListener('load', function() {
+      if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('flutter_service_worker.js');
+      }
+    });
+  </script>
+</body>
+</html>
